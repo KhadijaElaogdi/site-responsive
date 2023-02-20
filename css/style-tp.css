@@ -157,8 +157,19 @@ body .home {
 
 .home .contenu aside {
     border: 5px solid goldenrod;
-    width: 330px;
+    width: 340px;
     min-height: 410px;
+    max-height: 410px;
+    padding: 8px;
+    overflow: auto;
+}
+
+.home .contenu aside::-webkit-scrollbar {
+    width: 10px;
+}
+
+.home .contenu aside h3 {
+    color: burlywood;
 }
 
 .home main .carousel {
