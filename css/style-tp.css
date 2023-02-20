@@ -7,29 +7,73 @@
 /** Chargement des polices **/
 
 /** Déclaration du box-sizing **/
-
-/** Sémantique permettant un aspect constant sur toute l'application **/
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-header {}
+/** Sémantique permettant un aspect constant sur toute l'application **/
+
+header, footer {
+    background-color: black;
+    color: white;
+    height: 45px;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    gap: 60px;
+    align-items: center;
+    padding: 10px;
+}
+
+header .info {
+    display: flex;
+    gap: 20px;
+}
 
 header .info a img {
     width: 25px;
 }
 
-nav {}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 90%;
+    margin: auto;
+}
 
 nav .logo img {
     width: 100px;
-    border: 4px solid gold;
+    border: 4px solid goldenrod;
     border-radius: 15px;
 }
 
-aside {}
+nav .menu {
+    display: flex;
+    gap: 45px;
+    font-size: 20px;
+}
 
-main {}
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.7s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav .menu a:hover {
+    color: black;
+    background-color: goldenrod;
+    border-radius: 5px;
+}
 
 footer {}
 
@@ -42,21 +86,129 @@ footer {}
 **/
 
 /** Example pour les cas spécifiques de la page home **/
+body .home {
+    background-color: burlywood;
+    background: linear-gradient(to bottom, burlywood 0%, rgba(211, 231, 237, 1) 100%);
+}
 
 .home header {}
 
 .home nav {}
 
-.home aside {}
+.home .contenu {
+    background-color: black;
+    color: white;
+    min-height: 400px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .contenu aside {
+    border: 5px solid goldenrod;
+    width: 330px;
+    min-height: 410px;
+}
 
 .home main {}
 
 .home main .carousel {
-    /** Spécifique pour l'intégration du carousel de la page home **/
-    border: 2px solid red;
+    width: 800px;
+    min-height: 400px;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid goldenrod;
+    margin-left: 5px;
 }
 
-.home footer {}
+@keyframes slide {
+    0% {
+        left: 0%;
+    }
+
+    15% {
+        left: 0%;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    35% {
+        left: -100%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    55% {
+        left: -200%;
+    }
+
+    60% {
+        left: -300%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    80% {
+        left: -400%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+.home .carousel #slider-container {
+    position: relative;
+    width: 500%;
+    animation: 10s slide infinite;
+}
+
+.home .carousel #slider-container img {
+    width: 20%;
+    float: left;
+    height: 400px;
+}
+
+.home .last-aside {
+    width: 90%;
+    margin: auto;
+}
+
+.home aside .element img {
+    width: 200px;
+    height: 200px;
+    border: 4px solid goldenrod;
+    border-radius: 15px;
+}
+
+.home aside #container {
+    font-size: 0.8rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.home h3 {
+    text-align: center;
+}
+
+.home #container .element {
+    width: 200px;
+}
+
+.home #container .element p {
+    text-align: center;
+}
 
 /** Example pour les cas spécifiques de la page contact **/
 
