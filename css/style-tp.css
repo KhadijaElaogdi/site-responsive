@@ -49,6 +49,8 @@ header .info a img, footer .info-media-footer a img {
     width: 25px;
 }
 
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -89,6 +91,17 @@ nav .menu a.active {
     background-color: rgba(182, 177, 166, 0.5);
     border-radius: 5px;
 }
+
+nav .menu a:visited {
+    color: rgb(167, 89, 6);
+    /* couleur des liens déjà visités */
+}
+
+nav .menu a.active {
+    font-weight: bold;
+    /* style pour le lien de la page courante */
+}
+
 
 footer .informations {
     display: flex;
@@ -300,6 +313,62 @@ body .home {
     font-size: 20px;
 }
 
+/** Example pour les cas spécifiques de la page catalogue **/
+body .catalogue {
+    background-color: burlywood;
+    background: linear-gradient(to bottom, burlywood 0%, rgba(211, 231, 237, 1) 100%);
+}
+
+
+
+
+.catalogue main form {
+    /** Spécifique pour l'intégration du formulaire de catalogue **/
+    border: 2px solid black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.item {
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.item:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.item h2 {
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.item p {
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.contact footer {}
+
 /** Example pour les cas spécifiques de la page contact **/
 
 .contact header {}
@@ -316,6 +385,8 @@ body .home {
 }
 
 .contact footer {}
+
+
 
 /**
     Déclaration des media query pour chaque taille.
