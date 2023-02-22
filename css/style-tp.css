@@ -472,6 +472,7 @@ body .catalogue {
 
     #checkbx:checked~nav .menu {
         display: block;
+        background-color: rgba(192, 204, 214, 0.5);
     }
 
     #checkbx:checked~nav .mobile #times {
@@ -510,6 +511,19 @@ body .catalogue {
     /* nav {
         justify-content: flex-start;
     } */
+    .home .contenu {
+        display: block;
+    }
+
+    .home .contenu>aside {
+        width: 100%;
+        margin: 0;
+    }
+
+    .home main .carousel {
+        width: 100%;
+        margin: 0;
+    }
 
     footer .left, footer .right {
         width: 70%;
