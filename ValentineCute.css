@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ValentineCute';
+    src: url('fonts/ValentineCute.eot');
+    src: url('fonts/ValentineCute.eot') format('embedded-opentype'),
+         url('fonts/ValentineCute.woff2') format('woff2'),
+         url('fonts/ValentineCute.woff') format('woff'),
+         url('fonts/ValentineCute.ttf') format('truetype'),
+         url('fonts/ValentineCute.svg#ValentineCute') format('svg');
+}

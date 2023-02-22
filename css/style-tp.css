@@ -5,9 +5,21 @@
 **/
 
 /** Chargement des polices **/
+@font-face {
+    font-family: 'ValentineCute';
+    src: url('../fonts/ValentineCute.eot');
+    src: url('../fonts/ValentineCute.eot') format('embedded-opentype'),
+        url('../fonts/ValentineCute.woff2') format('woff2'),
+        url('../fonts/ValentineCute.woff') format('woff'),
+        url('../fonts/ValentineCute.ttf') format('truetype'),
+        url('../fonts/ValentineCute.svg#ValentineCute') format('svg');
+}
+
 
 /** Déclaration du box-sizing **/
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -27,7 +39,8 @@ header {
     align-items: center;
     padding: 10px;
     height: 55px;
-    font-size: 20px;
+    font-size: 15px;
+    font-family: 'ValentineCute';
 }
 
 header .info {
@@ -88,6 +101,7 @@ nav .menu a:hover {
 }
 
 nav .menu a.active {
+    /* style pour le lien de la page courante */
     background-color: rgba(182, 177, 166, 0.5);
     border-radius: 5px;
 }
@@ -96,12 +110,6 @@ nav .menu a:visited {
     color: rgb(167, 89, 6);
     /* couleur des liens déjà visités */
 }
-
-nav .menu a.active {
-    font-weight: bold;
-    /* style pour le lien de la page courante */
-}
-
 
 footer .informations {
     display: flex;
@@ -167,7 +175,7 @@ footer .right ul li {
     --------------------------------------------------------------------------------------------
 **/
 
-/** Example pour les cas spécifiques de la page home **/
+/** Les cas spécifiques de la page home **/
 body .home {
     background-color: burlywood;
     background: linear-gradient(to bottom, burlywood 0%, rgba(211, 231, 237, 1) 100%);
@@ -313,7 +321,7 @@ body .home {
     font-size: 20px;
 }
 
-/** Example pour les cas spécifiques de la page catalogue **/
+/** Les cas spécifiques de la page catalogue **/
 body .catalogue {
     background-color: burlywood;
     background: linear-gradient(to bottom, burlywood 0%, rgba(211, 231, 237, 1) 100%);
@@ -327,7 +335,7 @@ body .catalogue {
     border: 2px solid black;
 }
 
-h1 {
+.catalogue h1 {
     text-align: center;
     margin-top: 20px;
 }
@@ -339,7 +347,7 @@ h1 {
     margin-top: 20px;
 }
 
-.item {
+.catalogue .item {
     margin: 20px;
     width: 300px;
     height: 400px;
@@ -347,46 +355,36 @@ h1 {
     transition: box-shadow 0.3s ease;
 }
 
-.item:hover {
+.catalogue .item:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.item img {
+.catalogue .item img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-.item h2 {
+.catalogue .item h2 {
     margin: 10px;
     font-size: 1.5rem;
 }
 
-.item p {
+.catalogue .item p {
     margin: 10px;
     font-size: 1rem;
 }
 
-.contact footer {}
 
-/** Example pour les cas spécifiques de la page contact **/
-
-.contact header {}
-
-.contact nav {}
-
-.contact aside {}
-
-.contact main {}
+/** Les cas spécifiques de la page contact **/
 
 .contact main form {
-    /** Spécifique pour l'intégration du formulaire de contact **/
-    border: 2px solid black;
+    border: 2px solid rgb(133, 114, 114);
 }
 
-.contact footer {}
-
-
+.contact main {
+    display: flex;
+}
 
 /**
     Déclaration des media query pour chaque taille.
