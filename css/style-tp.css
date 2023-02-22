@@ -43,6 +43,11 @@ header {
     font-family: 'ValentineCute';
 }
 
+header .suivi {
+    display: flex;
+    gap: 40px;
+}
+
 header .info {
     display: flex;
     gap: 20px;
@@ -71,6 +76,7 @@ nav {
     padding: 10px 0;
     width: 90%;
     margin: auto;
+    height: 120px;
 }
 
 nav .logo img {
@@ -111,10 +117,32 @@ nav .menu a:visited {
     /* couleur des liens déjà visités */
 }
 
+#checkbx {
+    display: none;
+}
+
+.mobile {
+    position: relative;
+    display: none;
+}
+
+.mobile span {
+    height: 65px;
+    width: 65px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 65px;
+}
+
+/* main {
+    height: calc(100vh - 55px - 120px - 210px);
+    min-height: 1000px;
+} */
+
 footer .informations {
     display: flex;
     padding: 40px;
-    margin: auto;
+    justify-content: space-around;
 }
 
 footer .informations h2 {
@@ -390,7 +418,104 @@ body .catalogue {
     Déclaration des media query pour chaque taille.
     --------------------------------------------------------------------------------------------
 **/
+/* Version Mobile */
+@media only screen and (max-width:767px) {
+    header {
+        display: block;
+    }
 
-@media only screen and (max-width:767px) {}
+    header>div {
+        float: left;
+    }
 
-@media only screen and (min-width:992px) {}
+    header .suivi {
+        margin-left: 80px;
+        line-height: 30px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav .logo {
+        display: inline-block;
+        margin: 5px 50px;
+    }
+
+    nav .menu {
+        display: none;
+        width: 100%;
+        position: relative;
+    }
+
+    nav a {
+        width: 90%;
+        text-align: center;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+
+    nav .mobile {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 35px;
+        cursor: pointer;
+    }
+
+    nav .mobile #times {
+        color: yellow;
+        display: none;
+    }
+
+    #checkbx:checked~nav .menu {
+        display: block;
+    }
+
+    #checkbx:checked~nav .mobile #times {
+        display: block;
+    }
+
+    #checkbx:checked~nav .mobile #bars {
+        display: none;
+    }
+
+    footer .left, footer .center, footer .right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer .informations {
+        flex-direction: column;
+    }
+
+    footer .center {
+        text-align: left;
+    }
+}
+
+
+/*Version tablette */
+@media only screen and (max-width:992px) {
+    header .suivi {
+        display: block;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    /* nav {
+        justify-content: flex-start;
+    } */
+
+    footer .left, footer .right {
+        width: 70%;
+    }
+
+    footer .center {
+        width: 30%;
+    }
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="css/style-tp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
 
 <body>
@@ -13,17 +14,21 @@
         <header>
             <div>
                 <input type="search" name="search" id="search" placeholder="Rechercher">
-                <label for="search"><img src="images/icons8-search-64.png" alt="icon search"></label>
+                <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
             </div>
-            <div>
-                <p>Suivez-nous :</p>
-            </div>
-            <div class="info">
-                <a href="https://www.facebook.com"><img src="images/icone-facebook.svg" alt="icone facebook" /></a>
-                <a href="https://www.instagram.com"><img src="images/icone-instagram.svg" alt="icone facebook" /></a>
-                <a href="https://twitter.com"><img src="images/icone-twitter.svg" alt="icone facebook" /></a>
+            <div class="suivi">
+                <div>
+                    <p>Suivez-nous :</p>
+                </div>
+                <div class="info">
+                    <a href="https://www.facebook.com"><img src="images/icone-facebook.svg" alt="icone facebook" /></a>
+                    <a href="https://www.instagram.com"><img src="images/icone-instagram.svg"
+                            alt="icone facebook" /></a>
+                    <a href="https://twitter.com"><img src="images/icone-twitter.svg" alt="icone facebook" /></a>
+                </div>
             </div>
         </header>
+        <input type="checkbox" id="checkbx">
         <nav>
             <div class="logo">
                 <img src="images/logo.jpg" alt="Logo">
@@ -34,7 +39,12 @@
                 <a href="catalogue/catalogue.html">Catalogue</a>
                 <a href="contact/contact.html">Contact</a>
             </div>
+            <label for="checkbx" class="mobile">
+                <span class="fas fa-bars" id="bars"></span>
+                <span class="fas fa-times" id="times"></span>
+            </label>
         </nav>
+
         <div class="contenu">
             <aside>
                 <h2>Qui Nous Sommes ?</h2>
@@ -126,15 +136,16 @@
                 <div class="right">
                     <h2>Contact</h2>
                     <ul>
-                        <li><span>icon email</span>
+                        <li><span><i class="fa-solid fa-envelope"></i></span>
                             <a href="mailto:webmaster@gmail.com">webmaster@gmail.com</a>
                         </li>
-                        <li><span>icon tel</span>
+                        <li><span><i class="fa-solid fa-phone"></i></span>
                             +1 514-123-4567
                         </li>
-                        <li><span>icon adresse map</span>
+                        <li><span><i class="fa-solid fa-location-dot"></i></span>
                             <p>
-                                adresse ....
+                                Nordik Spa-Nature | Chelsea
+                                16 Chem. Nordik, Chelsea, QC J9B 2P7
                             </p>
                         </li>
                     </ul>
