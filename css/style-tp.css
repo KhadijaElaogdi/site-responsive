@@ -77,6 +77,14 @@ nav {
     width: 90%;
     margin: auto;
     height: 120px;
+    position: relative;
+    /*/*/
+}
+
+nav h1 {
+    position: absolute;
+    left: 110px;
+    width: 30%;
 }
 
 nav .logo img {
@@ -426,6 +434,11 @@ body .contact {
     height: 400px;
 }
 
+.contact div .etoile::after {
+    color: red;
+    content: "*";
+}
+
 .contact h2 {
     border: 1px solid black;
     border-radius: 10px;
@@ -455,19 +468,19 @@ body .contact {
     border-radius: 4px;
 }
 
-<<<<<<< HEAD
+
 body .contact {
     background-color: burlywood;
     background: linear-gradient(to bottom, burlywood 0%, rgba(211, 231, 237, 1) 100%);
 }
 
-.contact footer {}
-=======
+
+
 .contact form .contn3 fieldset div,
 .contact form .contn3 .chkbbx {
     display: inline;
 }
->>>>>>> 3626e51bf1d87f0ca8c9defd00366cb30cd818e3
+
 
 input[type=submit] {
     width: 100%;
@@ -567,6 +580,12 @@ input[type=submit]:hover {
 
         display: block;
     } */
+    nav h1 {
+        position: absolute;
+        left: 180px;
+        top: 10px;
+        width: 40%;
+    }
 }
 
 
