@@ -439,6 +439,10 @@ body .contact {
     content: "*";
 }
 
+/* .contact div .contn1 .etoile input:valid {
+    border-color: green;
+} */
+
 .contact h2 {
     border: 1px solid black;
     border-radius: 10px;
