@@ -363,14 +363,6 @@ body .catalogue {
     background: linear-gradient(to bottom, burlywood 0%, rgb(240, 174, 108) 100%);
 }
 
-
-
-
-.catalogue main form {
-    /** Spécifique pour l'intégration du formulaire de catalogue **/
-    border: 2px solid black;
-}
-
 .catalogue h1 {
     text-align: center;
     margin-top: 20px;
@@ -384,7 +376,7 @@ body .catalogue {
 }
 
 .catalogue .item {
-    margin: 20px;
+    margin: 10px;
     width: 300px;
     height: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
