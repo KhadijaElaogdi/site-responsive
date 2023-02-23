@@ -508,12 +508,12 @@ body .detail-produit {
     background: linear-gradient(to bottom, burlywood 0%, rgba(211, 231, 237, 1) 100%);
 }
 
-* {
+/* * {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
+} */
 
 /* css pour page details-produit */
 .detail-produit>main {
@@ -573,13 +573,12 @@ body .detail-produit {
     overflow: auto;
 }
 
-
-main {
+.detail-produit main {
     padding: 2em;
 
 }
 
-.wrapper {
+.detail-produit .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -591,18 +590,18 @@ main {
     border-radius: 15px;
 } */
 
-.image img {
+.detail-produit .image img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.details {
+.detail-produit .details {
     flex: 1;
     max-width: 50%;
 }
 
-.details h2 {
+.detail-produit .details h2 {
     font-size: 2em;
     margin-bottom: 0
 }
