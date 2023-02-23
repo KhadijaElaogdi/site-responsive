@@ -77,6 +77,14 @@ nav {
     width: 90%;
     margin: auto;
     height: 120px;
+    position: relative;
+    /*/*/
+}
+
+nav h1 {
+    position: absolute;
+    left: 110px;
+    width: 30%;
 }
 
 nav .logo img {
@@ -431,6 +439,15 @@ body .contact {
     height: 400px;
 }
 
+.contact div .etoile::after {
+    color: red;
+    content: "*";
+}
+
+/* .contact div .contn1 .etoile input:valid {
+    border-color: green;
+} */
+
 .contact h2 {
     border: 1px solid black;
     border-radius: 10px;
@@ -763,6 +780,12 @@ video::-webkit-media-controls-volume-slider {
 
         display: block;
     } */
+    nav h1 {
+        position: absolute;
+        left: 180px;
+        top: 10px;
+        width: 40%;
+    }
 }
 
 

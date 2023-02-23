@@ -64,24 +64,25 @@
                 <form action="#">
                     <div class="flex">
                         <div class="contn1">
-                            <label for="lastName">Nom</label>
+                            <label for="lastName" class="etoile">Nom</label>
                             <input type="text" id="lastName" placeholder="Nom de l'utilisateur" name="lastName"
-                                required="required" maxlength="50" autofocus />
-                            <label for="firstName">Prénom</label>
+                                required="required" maxlength="50" title="Ce champ est obligatoire" autofocus />
+                            <label for="firstName" class="etoile">Prénom</label>
                             <input type="text" id="firstName" name="firstName" placeholder="Prénom de l'utilisateur"
-                                required="required" maxlength="50" />
-                            <label for="userPhone">Téléphone</label>
+                                required="required" maxlength="50" title="Ce champ est obligatoire" />
+                            <label for="userPhone" class="etoile">Téléphone</label>
                             <input type="tel" id="userPhone" name="userPhone" placeholder="514-888-9999"
-                                pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" required="required" />
+                                pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" required="required"
+                                title="Ce champ est obligatoire" />
                         </div>
                         <div class="contn2">
-                            <label for="userAge">Votre âge</label>
+                            <label for="userAge" class="etoile">Votre âge</label>
                             <input type="number" id="userAge" name="userAge" placeholder="Âge" min="18" max="150"
-                                required="required" />
+                                required="required" title="Ce champ est obligatoire" />
 
-                            <label for="userEmail">Courriel</label>
+                            <label for="userEmail" class="etoile">Courriel</label>
                             <input type="email" id="userEmail" name="userEmail" placeholder="Courriel"
-                                required="required" maxlength="100" />
+                                required="required" maxlength="100" title="Ce champ est obligatoire" />
 
                             <label for="pays">Pays</label>
                             <input type="text" name="pays" id="pays" list="pays_list">
